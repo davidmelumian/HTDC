@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 class Item {
     int catalog;
     String title;

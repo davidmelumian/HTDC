@@ -1,4 +1,3 @@
-#lang profj/beginner
 
 class TemperatureRange {
 int high;

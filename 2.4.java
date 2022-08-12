@@ -1,4 +1,3 @@
-#lang profj/beginner
 class Automobile {
 String model;
 int price;//[in models]

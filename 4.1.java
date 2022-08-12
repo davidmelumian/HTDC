@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 //Cartesian points on a computer monitor
 class CartPt {
 int x;

@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 class Adress {
     String country;
     String city;

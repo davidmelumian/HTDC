@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 class ClockTime {
     int hour;
     int minute;

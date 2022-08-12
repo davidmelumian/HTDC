@@ -1,5 +1,4 @@
-#lang profj/beginner
-class BookStore {
+class BookStore{
 String author ;
 String title;
 double price;

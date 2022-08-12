@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 interface  IPT {}
 
 class Player {

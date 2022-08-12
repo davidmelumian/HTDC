@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 interface  IRiver {}
 
 //location on a river

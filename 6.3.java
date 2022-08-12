@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 class Time {
     int hour;
     int minute;

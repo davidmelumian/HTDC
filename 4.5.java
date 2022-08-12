@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 class Type {
     String name;
     double size;

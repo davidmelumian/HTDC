@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 
 class Room {
     int n;

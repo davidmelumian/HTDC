@@ -1,4 +1,3 @@
-#lang profj/beginner
 //represent computer images
 class Image {
 int height;//pixels

@@ -1,4 +1,3 @@
-#lang profj/beginner
 // introducing the concept of gravity
 class Apple {
 int x;

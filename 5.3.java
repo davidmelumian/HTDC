@@ -1,4 +1,3 @@
-#lang profj/beginner
 interface  ILREA {}
 
 class EmptyILREA implements ILREA {

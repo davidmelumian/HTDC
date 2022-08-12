@@ -1,4 +1,3 @@
-#lang profj/beginner
 
 // a runner's log
 interface ILog {}
@@ -48,16 +47,28 @@ class Examples{
     Date d1 = new Date(5, 6,2003);
     Date d2 = new Date(6,6,2003);
     Date d3 = new Date(23,6,2003);
+    Date d4 = new Date(15, 6, 2004);
+    Date d5 = new Date(16, 6, 2004);
+    Date d6 = new Date(23,6, 2004);
+    Date d7 = new Date(28,6, 2004);
     Entry e1 = new Entry(this.d1,5.3,27, "feeling good");
     Entry e2 = new Entry(this.d2,2.8,24,"feeling tired");
     Entry e3 = new Entry(this.d3,26.2,150,"feeling exhausted");
+    Entry e4 = new Entry(this.d4, 15.3, 87, "feeling great");
+    Entry e5 = new Entry(this.d5,12.8,84,"feeling good");
+    Entry e6 = new Entry(this.d6,26.2,250, "feeling dead");
+    Entry e7 = new Entry(this.d7,26.2, 150, "good recovery");
 
     ILog i1 = new MTLog();
     ILog i2 = new ConsLog(this.e1,this.i1);
     ILog i3 = new ConsLog(this.e2,this.i2);
     ILog i4 = new ConsLog(this.e3,this.i3);
-    Ilog i5 = new ConsLog(this.e3,this.i1);
-    Ilog i6 = new ConsLog(this.e3,this.i2);
+    ILog i5 = new ConsLog(this.e3,this.i1);
+    ILog i6 = new ConsLog(this.e3,this.i2);
+    ILog i7 = new ConsLog(this.e4,this.i1);
+    ILog i8 = new ConsLog(this.e5,this.i7);
+    ILog i9 = new ConsLog(this.e6,this.i8);
+    ILog i10 = new ConsLog(this.e7,this.i9);
     Examples () {}
 }
 

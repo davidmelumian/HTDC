@@ -1,4 +1,4 @@
-#lang profj/beginner
+
 
 // short for Bank Account
 interface  BA {}

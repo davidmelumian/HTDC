@@ -1,4 +1,3 @@
-#lang profj/beginner
 class REA {
 String type;
 Room   r;

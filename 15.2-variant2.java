@@ -25,16 +25,16 @@ class Entry {
     }
     // was this entry made in the given month and year?
     boolean sameMonthAndYear (int month,int year) {
-      return this.d.sameMonthAndYear(month,year);
-}}
+        return this.d.sameMonthAndYear(month,year);
+    }}
 
 interface ILog {
-//to compute the total number of miles recorded in this log
+    //to compute the total number of miles recorded in this log
     double miles ();
     // to extract those entries in this log for the given month and year
     ILog oneMonth (int month, int year);
     // to compute the total number of miles in month.
-    double milesmonth();
+    double milesmonth(int m,int y);
 
 }
 class  Empty implements  ILog{
@@ -45,7 +45,7 @@ class  Empty implements  ILog{
     ILog oneMonth (int m,int y) {
         return  new Empty();
     }
-    double milesmonth(){
+    double milesmonth(int m,int y){
         return  0;
     }
 }
@@ -67,10 +67,10 @@ class Cons implements ILog{
             return  this.rst.oneMonth(m,y);
         }
     }
-    double milesmonth (){
-        return this.oneMonth(6,2003).miles();
+    double milesmonth (int m,int y){
+        return this.oneMonth(m,y).miles();
     }
-    
+
 }
 
 class Examples {
@@ -88,6 +88,8 @@ class Examples {
 
     ILog i4 =new Cons(new Entry(new Date(23,6,2003), 26.0,156,"feeling exhausted"),
             new Cons(new Entry(new Date(6,6,2003),3.0,24,"feeling tired"),
-            new Cons (new Entry(new Date(5,6,2003), 5.0,25,"feeling good"), new Empty())));
+                    new Cons (new Entry(new Date(5,6,2003), 5.0,25,"feeling good"), new Empty())));
     Examples (){}
 }
+
+  

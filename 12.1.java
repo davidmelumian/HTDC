@@ -7,7 +7,7 @@ class CartPt {
     }
     // to compute the distance of this project to the origin
     double distance(){
-        return Math.sqrt(this.x*this.x+this.y+this.y);
+        return Math.sqrt(this.x*this.x+this.y*this.y);
     }
     boolean same (CartPt p){
         return this.x==p.x&&this.y==p.y;
